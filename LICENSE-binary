@@ -643,73 +643,51 @@ SOFTWARE.
 The following dependencies are included in the binary Storm distributions, in addition to the source dependencies listed above.
 The license texts of these dependencies can be found in the licenses directory.
 
+    3-Clause BSD License
+
+        * Kryo (com.esotericsoftware:kryo:4.0.2 - https://github.com/EsotericSoftware/kryo/kryo)
+        * Kryo Shaded (com.esotericsoftware:kryo-shaded:4.0.2 - https://github.com/EsotericSoftware/kryo/kryo-shaded)
+
     Apache License
 
-        * HttpClient (commons-httpclient:commons-httpclient:3.1 - http://jakarta.apache.org/httpcomponents/httpclient-3.x/)
+        * Log4j Implemented Over SLF4J (org.slf4j:log4j-over-slf4j:1.7.36 - http://www.slf4j.org)
 
     Apache License, Version 2.0
 
-        * reload4j (ch.qos.reload4j:reload4j:1.2.19 - https://reload4j.qos.ch)
-        * Plexus Common Utilities (org.codehaus.plexus:plexus-utils:3.1.0 - http://codehaus-plexus.github.io/plexus-utils/)
-        * Maven Artifact (org.apache.maven:maven-artifact:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-artifact/)
-        * Maven Builder Support (org.apache.maven:maven-builder-support:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-builder-support/)
-        * Maven Artifact Resolver Transport File (org.apache.maven.resolver:maven-resolver-transport-file:1.3.3 - https://maven.apache.org/resolver/maven-resolver-transport-file/)
-        * Maven Artifact Resolver Transport HTTP (org.apache.maven.resolver:maven-resolver-transport-http:1.3.3 - https://maven.apache.org/resolver/maven-resolver-transport-http/)
-        * Maven Repository Metadata Model (org.apache.maven:maven-repository-metadata:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-repository-metadata/)
-        * Maven Artifact Resolver Provider (org.apache.maven:maven-resolver-provider:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-resolver-provider/)
-        * Maven Model (org.apache.maven:maven-model:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-model/)
-        * Netty/All-in-One (io.netty:netty-all:4.1.30.Final - http://netty.io/netty-all/)
-        * Maven Artifact Resolver API (org.apache.maven.resolver:maven-resolver-api:1.3.3 - https://maven.apache.org/resolver/maven-resolver-api/)
-        * Maven Artifact Resolver SPI (org.apache.maven.resolver:maven-resolver-spi:1.3.3 - https://maven.apache.org/resolver/maven-resolver-spi/)
-        * Maven Artifact Resolver Implementation (org.apache.maven.resolver:maven-resolver-impl:1.3.3 - https://maven.apache.org/resolver/maven-resolver-impl/)
-        * Maven Model Builder (org.apache.maven:maven-model-builder:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-model-builder/)
-        * Plexus :: Component Annotations (org.codehaus.plexus:plexus-component-annotations:1.7.1 - http://codehaus-plexus.github.io/plexus-containers/plexus-component-annotations/)
-        * Maven Artifact Resolver Utilities (org.apache.maven.resolver:maven-resolver-util:1.3.3 - https://maven.apache.org/resolver/maven-resolver-util/)
-        * Maven Artifact Resolver Connector Basic (org.apache.maven.resolver:maven-resolver-connector-basic:1.3.3 - https://maven.apache.org/resolver/maven-resolver-connector-basic/)
-        * Netty/All-in-One (io.netty:netty-all:4.1.30.Final - http://netty.io/netty-all/)
-        * Netty/Buffer (io.netty:netty-buffer:4.1.30.Final - http://netty.io/netty-buffer/)
-        * Netty/Codec (io.netty:netty-codec:4.1.30.Final - http://netty.io/netty-codec/)
-        * Netty/Common (io.netty:netty-common:4.1.30.Final - http://netty.io/netty-common/)
-        * Netty/Handler (io.netty:netty-handler:4.1.30.Final - http://netty.io/netty-handler/)
-        * Netty/Resolver (io.netty:netty-resolver:4.1.30.Final - http://netty.io/netty-resolver/)
-        * Netty/Transport/Native/Epoll (io.netty:netty-transport-native-epoll:4.1.30.Final - http://netty.io/netty-transport-native-epoll/)
-        * Netty/Transport/Native/Unix/Common (io.netty:netty-transport-native-unix-common:4.1.30.Final - http://netty.io/netty-transport-native-unix-common/)
-        * Netty/Transport (io.netty:netty-transport:4.1.30.Final - http://netty.io/netty-transport/)
-        * Netty (io.netty:netty:3.6.2.Final - http://netty.io/)
         * Aggregate Designer Algorithm (net.hydromatic:aggdesigner-algorithm:6.0 - http://github.com/julianhyde/aggdesigner/aggdesigner-algorithm)
-        * aircompressor (io.airlift:aircompressor:0.8 - http://github.com/airlift/aircompressor)
-        * Annotation 1.0 (org.apache.geronimo.specs:geronimo-annotation_1.0_spec:1.1.1 - http://geronimo.apache.org/specs/geronimo-annotation_1.0_spec)
+        * aircompressor (io.airlift:aircompressor:0.10 - http://github.com/airlift/aircompressor)
         * Annotations for Metrics (io.dropwizard.metrics:metrics-annotation:4.0.5 - http://metrics.dropwizard.io/metrics-annotation)
-        * ant (ant:ant:1.6.5 - http://www.apache.org/ant/)
         * Apache Ant Core (org.apache.ant:ant:1.9.1 - http://ant.apache.org/)
         * Apache Ant Launcher (org.apache.ant:ant-launcher:1.9.1 - http://ant.apache.org/)
         * Apache Avro (org.apache.avro:avro:1.7.7 - http://avro.apache.org)
         * Apache Calcite Avatica (org.apache.calcite.avatica:avatica-core:1.10.0 - https://calcite.apache.org/avatica/avatica-core)
+        * Apache Calcite Avatica (Shaded) (org.apache.calcite.avatica:avatica:1.11.0 - https://calcite.apache.org/avatica/avatica)
         * Apache Commons CLI (commons-cli:commons-cli:1.4 - http://commons.apache.org/proper/commons-cli/)
         * Apache Commons Codec (commons-codec:commons-codec:1.11 - http://commons.apache.org/proper/commons-codec/)
         * Apache Commons Collections (commons-collections:commons-collections:3.2.2 - http://commons.apache.org/collections/)
+        * Apache Commons Collections (org.apache.commons:commons-collections4:4.1 - http://commons.apache.org/proper/commons-collections/)
         * Apache Commons Compress (org.apache.commons:commons-compress:1.21 - https://commons.apache.org/proper/commons-compress/)
         * Apache Commons Crypto (org.apache.commons:commons-crypto:1.0.0 - http://commons.apache.org/proper/commons-crypto/)
         * Apache Commons CSV (org.apache.commons:commons-csv:1.4 - http://commons.apache.org/proper/commons-csv/)
         * Apache Commons Exec (org.apache.commons:commons-exec:1.3 - http://commons.apache.org/proper/commons-exec/)
         * Apache Commons FileUpload (commons-fileupload:commons-fileupload:1.3.3 - http://commons.apache.org/proper/commons-fileupload/)
-        * Apache Commons IO (commons-io:commons-io:2.11.0 - http://commons.apache.org/proper/commons-io/)
+        * Apache Commons IO (commons-io:commons-io:2.11.0 - https://commons.apache.org/proper/commons-io/)
         * Apache Commons Lang (org.apache.commons:commons-lang3:3.2 - http://commons.apache.org/proper/commons-lang/)
         * Apache Commons Lang (org.apache.commons:commons-lang3:3.6 - http://commons.apache.org/proper/commons-lang/)
         * Apache Commons Lang (org.apache.commons:commons-lang3:3.8.1 - http://commons.apache.org/proper/commons-lang/)
         * Apache Commons Logging (commons-logging:commons-logging:1.2 - http://commons.apache.org/proper/commons-logging/)
         * Apache Commons Math (org.apache.commons:commons-math3:3.6.1 - http://commons.apache.org/proper/commons-math/)
         * Apache Commons Text (org.apache.commons:commons-text:1.2 - http://commons.apache.org/proper/commons-text/)
-        * Apache Curator (org.apache.curator:apache-curator:2.7.1 - http://curator.apache.org)
-        * Apache Derby Database Engine and Embedded JDBC Driver (org.apache.derby:derby:10.10.2.0 - http://db.apache.org/derby/derby/)
+        * Apache Curator (org.apache.curator:apache-curator:2.12.0 - http://curator.apache.org)
+        * Apache Derby Database Engine and Embedded JDBC Driver (org.apache.derby:derby:10.14.1.0 - http://db.apache.org/derby/)
         * Apache Directory API ASN.1 API (org.apache.directory.api:api-asn1-api:1.0.0-M20 - http://directory.apache.org/api-parent/api-asn1-parent/api-asn1-api/)
         * Apache Directory LDAP API Utilities (org.apache.directory.api:api-util:1.0.0-M20 - http://directory.apache.org/api-parent/api-util/)
         * ApacheDS I18n (org.apache.directory.server:apacheds-i18n:2.0.0-M15 - http://directory.apache.org/apacheds/1.5/apacheds-i18n)
         * ApacheDS Protocol Kerberos Codec (org.apache.directory.server:apacheds-kerberos-codec:2.0.0-M15 - http://directory.apache.org/apacheds/1.5/apacheds-kerberos-codec)
         * Apache Geronimo JCache Spec 1.0 (org.apache.geronimo.specs:geronimo-jcache_1.0_spec:1.0-alpha-1 - http://geronimo.apache.org/maven/specs/geronimo-jcache_1.0_spec/1.0-alpha-1)
-        * Apache Groovy (org.codehaus.groovy:groovy-all:2.4.4 - http://groovy-lang.org)
-        * Apache Hadoop Archives (org.apache.hadoop:hadoop-archives:2.10.1 - no url defined)
+        * Apache Groovy (org.codehaus.groovy:groovy-all:2.4.11 - http://groovy-lang.org)
         * Apache Hadoop Annotations (org.apache.hadoop:hadoop-annotations:2.10.1 - no url defined)
+        * Apache Hadoop Archives (org.apache.hadoop:hadoop-archives:2.10.1 - no url defined)
         * Apache Hadoop Auth (org.apache.hadoop:hadoop-auth:2.10.1 - no url defined)
         * Apache Hadoop Client (org.apache.hadoop:hadoop-client:2.10.1 - no url defined)
         * Apache Hadoop Common (org.apache.hadoop:hadoop-common:2.10.1 - no url defined)
@@ -721,22 +699,25 @@ The license texts of these dependencies can be found in the licenses directory.
         * Apache Hadoop MapReduce JobClient (org.apache.hadoop:hadoop-mapreduce-client-jobclient:2.10.1 - no url defined)
         * Apache Hadoop MapReduce Shuffle (org.apache.hadoop:hadoop-mapreduce-client-shuffle:2.10.1 - no url defined)
         * Apache Hadoop YARN API (org.apache.hadoop:hadoop-yarn-api:2.10.1 - no url defined)
+        * Apache Hadoop YARN ApplicationHistoryService (org.apache.hadoop:hadoop-yarn-server-applicationhistoryservice:2.10.1 - no url defined)
         * Apache Hadoop YARN Client (org.apache.hadoop:hadoop-yarn-client:2.10.1 - no url defined)
         * Apache Hadoop YARN Common (org.apache.hadoop:hadoop-yarn-common:2.10.1 - no url defined)
-        * Apache Hadoop YARN Server Common (org.apache.hadoop:hadoop-yarn-server-common:2.10.1 - no url defined)
-        * Apache Hadoop YARN ApplicationHistoryService (org.apache.hadoop:hadoop-yarn-server-applicationhistoryservice:2.10.1 - no url defined)
         * Apache Hadoop YARN Registry (org.apache.hadoop:hadoop-yarn-registry:2.10.1 - no url defined)
         * Apache Hadoop YARN ResourceManager (org.apache.hadoop:hadoop-yarn-server-resourcemanager:2.10.1 - no url defined)
+        * Apache Hadoop YARN Server Common (org.apache.hadoop:hadoop-yarn-server-common:2.10.1 - no url defined)
         * Apache Hadoop YARN Web Proxy (org.apache.hadoop:hadoop-yarn-server-web-proxy:2.10.1 - no url defined)
         * Apache HBase - Annotations (org.apache.hbase:hbase-annotations:2.1.3 - http://hbase.apache.org/hbase-annotations)
         * Apache HBase - Client (org.apache.hbase:hbase-client:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-client)
+        * Apache HBase - Common (org.apache.hbase:hbase-common:2.0.0-alpha4 - http://hbase.apache.org/hbase-build-configuration/hbase-common)
         * Apache HBase - Common (org.apache.hbase:hbase-common:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-common)
         * Apache HBase - Hadoop Compatibility (org.apache.hbase:hbase-hadoop-compat:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-hadoop-compat)
         * Apache HBase - Hadoop Two Compatibility (org.apache.hbase:hbase-hadoop2-compat:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-hadoop2-compat)
         * Apache HBase - HTTP (org.apache.hbase:hbase-http:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-http)
+        * Apache HBase - MapReduce (org.apache.hbase:hbase-mapreduce:2.0.0-alpha4 - http://hbase.apache.org/hbase-build-configuration/hbase-mapreduce)
         * Apache HBase - Metrics API (org.apache.hbase:hbase-metrics-api:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-metrics-api)
         * Apache HBase - Metrics Implementation (org.apache.hbase:hbase-metrics:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-metrics)
         * Apache HBase Patched & Relocated (Shaded) Protobuf (org.apache.hbase.thirdparty:hbase-shaded-protobuf:2.1.0 - http://hbase.apache.org/hbase-shaded-protobuf)
+        * Apache HBase - Prefix Tree (org.apache.hbase:hbase-prefix-tree:2.0.0-alpha4 - http://hbase.apache.org/hbase-build-configuration/hbase-prefix-tree)
         * Apache HBase - Procedure (org.apache.hbase:hbase-procedure:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-procedure)
         * Apache HBase - Protocol (org.apache.hbase:hbase-protocol:2.1.3 - http://hbase.apache.org/hbase-build-configuration/hbase-protocol)
         * Apache HBase Relocated (Shaded) Netty Libs (org.apache.hbase.thirdparty:hbase-shaded-netty:2.1.0 - http://hbase.apache.org/hbase-shaded-netty)
@@ -755,24 +736,30 @@ The license texts of these dependencies can be found in the licenses directory.
         * Apache Log4j Core (org.apache.logging.log4j:log4j-core:2.17.1 - https://logging.apache.org/log4j/2.x/log4j-core/)
         * Apache Log4j SLF4J Binding (org.apache.logging.log4j:log4j-slf4j-impl:2.17.1 - https://logging.apache.org/log4j/2.x/log4j-slf4j-impl/)
         * Apache Log4j Web (org.apache.logging.log4j:log4j-web:2.17.1 - https://logging.apache.org/log4j/2.x/log4j-web/)
-        * Apache Parquet Hadoop Bundle (org.apache.parquet:parquet-hadoop-bundle:1.8.1 - https://parquet.apache.org)
+        * Apache Parquet Hadoop Bundle (org.apache.parquet:parquet-hadoop-bundle:1.10.0 - https://parquet.apache.org)
+        * Apache Standard Taglib Implementation (org.apache.taglibs:taglibs-standard-impl:1.2.5 - http://tomcat.apache.org/taglibs/standard-1.2.5/taglibs-standard-impl)
+        * Apache Standard Taglib Specification API (org.apache.taglibs:taglibs-standard-spec:1.2.5 - http://tomcat.apache.org/taglibs/standard-1.2.5/taglibs-standard-spec)
         * Apache Thrift (org.apache.thrift:libfb303:0.9.3 - http://thrift.apache.org)
         * Apache Thrift (org.apache.thrift:libthrift:0.13.0 - http://thrift.apache.org)
-        * Plexus Interpolation API (org.codehaus.plexus:plexus-interpolation:1.25 - http://codehaus-plexus.github.io/plexus-interpolation/)
         * Apache Twill API (org.apache.twill:twill-api:0.6.0-incubating - http://twill.incubator.apache.org/twill-api)
         * Apache Twill common library (org.apache.twill:twill-common:0.6.0-incubating - http://twill.incubator.apache.org/twill-common)
         * Apache Twill core library (org.apache.twill:twill-core:0.6.0-incubating - http://twill.incubator.apache.org/twill-core)
         * Apache Twill discovery service API (org.apache.twill:twill-discovery-api:0.6.0-incubating - http://twill.incubator.apache.org/twill-discovery-api)
         * Apache Twill discovery service implementations (org.apache.twill:twill-discovery-core:0.6.0-incubating - http://twill.incubator.apache.org/twill-discovery-core)
         * Apache Twill ZooKeeper client library (org.apache.twill:twill-zookeeper:0.6.0-incubating - http://twill.incubator.apache.org/twill-zookeeper)
-        * Apache Velocity (org.apache.velocity:velocity:1.5 - http://velocity.apache.org/engine/releases/velocity-1.5/)
         * Apache Yetus - Audience Annotations (org.apache.yetus:audience-annotations:0.5.0 - https://yetus.apache.org/audience-annotations)
         * Apache ZooKeeper - Jute (org.apache.zookeeper:zookeeper-jute:3.5.9 - http://zookeeper.apache.org/zookeeper-jute)
         * Apache ZooKeeper - Server (org.apache.zookeeper:zookeeper:3.5.9 - http://zookeeper.apache.org/zookeeper)
+        * Arrow Format (org.apache.arrow:arrow-format:0.8.0 - http://arrow.apache.org/arrow-format/)
+        * Arrow Memory (org.apache.arrow:arrow-memory:0.8.0 - http://arrow.apache.org/arrow-memory/)
+        * Arrow Vectors (org.apache.arrow:arrow-vector:0.8.0 - http://arrow.apache.org/arrow-vector/)
         * ASM based accessors helper used by json-smart (net.minidev:accessors-smart:1.2 - http://www.minidev.net/)
+        * Bean Validation API (javax.validation:validation-api:2.0.1.Final - http://beanvalidation.org)
         * BoneCP :: Core Library (com.jolbox:bonecp:0.8.0.RELEASE - http://jolbox.com/bonecp)
         * Calcite Core (org.apache.calcite:calcite-core:1.14.0 - https://calcite.apache.org/calcite-core)
+        * Calcite Druid (org.apache.calcite:calcite-druid:1.16.0 - https://calcite.apache.org/calcite-druid)
         * Calcite Linq4j (org.apache.calcite:calcite-linq4j:1.14.0 - https://calcite.apache.org/calcite-linq4j)
+        * Calcite Linq4j (org.apache.calcite:calcite-linq4j:1.16.0 - https://calcite.apache.org/calcite-linq4j)
         * carbonite (com.twitter:carbonite:1.5.0 - no url defined)
         * chill-java (com.twitter:chill-java:0.8.0 - https://github.com/twitter/chill)
         * ClassMate (com.fasterxml:classmate:1.3.1 - http://github.com/cowtowncoder/java-classmate)
@@ -807,8 +794,6 @@ The license texts of these dependencies can be found in the licenses directory.
         * Dropwizard Utility Classes (io.dropwizard:dropwizard-util:1.3.19 - http://www.dropwizard.io/1.3.19/dropwizard-util)
         * Dropwizard Validation Support (io.dropwizard:dropwizard-validation:1.3.19 - http://www.dropwizard.io/1.3.19/dropwizard-validation)
         * Ehcache (org.ehcache:ehcache:3.3.1 - http://ehcache.org)
-        * eigenbase-properties (net.hydromatic:eigenbase-properties:1.1.5 - http://github.com/julianhyde/eigenbase-properties)
-        * EL (commons-el:commons-el:1.0 - http://jakarta.apache.org/commons/el/)
         * error-prone annotations (com.google.errorprone:error_prone_annotations:2.2.0 - http://nexus.sonatype.org/oss-repository-hosting.html/error_prone_parent/error_prone_annotations)
         * Esri Geometry API for Java (com.esri.geometry:esri-geometry-api:2.0.0 - https://github.com/Esri/geometry-api-java)
         * fastutil (it.unimi.dsi:fastutil:6.5.6 - http://fasutil.dsi.unimi.it/)
@@ -827,29 +812,35 @@ The license texts of these dependencies can be found in the licenses directory.
         * Guava ListenableFuture only (com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava - https://github.com/google/guava/listenablefuture)
         * Hadoop Metrics2 Reporter for Dropwizard Metrics (com.github.joshelser:dropwizard-metrics-hadoop-metrics2-reporter:0.1.2 - https://github.com/joshelser/dropwizard-hadoop-metrics2)
         * Hibernate Validator Engine (org.hibernate:hibernate-validator:5.4.3.Final - http://hibernate.org/validator/hibernate-validator)
-        * HikariCP (com.zaxxer:HikariCP:2.5.1 - https://github.com/brettwooldridge/HikariCP)
+        * Hibernate Validator Engine (org.hibernate.validator:hibernate-validator:6.0.17.Final - http://hibernate.org/validator/hibernate-validator)
+        * HikariCP (com.zaxxer:HikariCP:2.6.1 - https://github.com/brettwooldridge/HikariCP)
         * HikariCP (com.zaxxer:HikariCP-java7:2.4.12 - https://github.com/brettwooldridge/HikariCP)
-        * Hive CLI (org.apache.hive:hive-cli:2.3.9 - http://hive.apache.org/hive-cli)
-        * Hive Common (org.apache.hive:hive-common:2.3.9 - http://hive.apache.org/hive-common)
-        * Hive HCatalog Core (org.apache.hive.hcatalog:hive-hcatalog-core:2.3.9 - http://hive.apache.org/hive-hcatalog/hive-hcatalog-core)
-        * Hive HCatalog Server Extensions (org.apache.hive.hcatalog:hive-hcatalog-server-extensions:2.3.9 - http://hive.apache.org/hive-hcatalog/hive-hcatalog-server-extensions)
-        * Hive HCatalog Streaming (org.apache.hive.hcatalog:hive-hcatalog-streaming:2.3.9 - http://hive.apache.org/hive-hcatalog/hive-hcatalog-streaming)
-        * Hive HCatalog Webhcat Java Client (org.apache.hive.hcatalog:hive-webhcat-java-client:2.3.9 - http://hive.apache.org/hive-hcatalog/hive-webhcat-java-client)
-        * Hive Llap Client (org.apache.hive:hive-llap-client:2.3.9 - http://hive.apache.org/hive-llap-client)
-        * Hive Llap Common (org.apache.hive:hive-llap-common:2.3.9 - http://hive.apache.org/hive-llap-common)
-        * Hive Llap Server (org.apache.hive:hive-llap-server:2.3.9 - http://hive.apache.org/hive-llap-server)
-        * Hive Llap Tez (org.apache.hive:hive-llap-tez:2.3.9 - http://hive.apache.org/hive-llap-tez)
-        * Hive Metastore (org.apache.hive:hive-metastore:2.3.9 - http://hive.apache.org/hive-metastore)
-        * Hive Query Language (org.apache.hive:hive-exec:2.3.9 - http://hive.apache.org/hive-exec)
-        * Hive Serde (org.apache.hive:hive-serde:2.3.9 - http://hive.apache.org/hive-serde)
-        * Hive Service (org.apache.hive:hive-service:2.3.9 - http://hive.apache.org/hive-service)
-        * Hive Service RPC (org.apache.hive:hive-service-rpc:2.3.9 - http://hive.apache.org/hive-service-rpc)
-        * Hive Shims (org.apache.hive:hive-shims:2.3.9 - http://hive.apache.org/hive-shims)
-        * Hive Shims 0.23 (org.apache.hive.shims:hive-shims-0.23:2.3.9 - http://hive.apache.org/hive-shims-0.23)
-        * Hive Shims Common (org.apache.hive.shims:hive-shims-common:2.3.9 - http://hive.apache.org/hive-shims-common)
-        * Hive Shims Scheduler (org.apache.hive.shims:hive-shims-scheduler:2.3.9 - http://hive.apache.org/hive-shims-scheduler)
-        * Hive Storage API (org.apache.hive:hive-storage-api:2.4.0 - https://www.apache.org/hive-storage-api/)
-        * Hive Vector-Code-Gen Utilities (org.apache.hive:hive-vector-code-gen:2.3.9 - http://hive.apache.org/hive-vector-code-gen)
+        * Hive Classifications (org.apache.hive:hive-classification:3.1.3 - https://hive.apache.org/hive-classification)
+        * Hive CLI (org.apache.hive:hive-cli:3.1.3 - https://hive.apache.org/hive-cli)
+        * Hive Common (org.apache.hive:hive-common:3.1.3 - https://hive.apache.org/hive-common)
+        * Hive HCatalog Core (org.apache.hive.hcatalog:hive-hcatalog-core:3.1.3 - https://hive.apache.org/hive-hcatalog/hive-hcatalog-core)
+        * Hive HCatalog Server Extensions (org.apache.hive.hcatalog:hive-hcatalog-server-extensions:3.1.3 - https://hive.apache.org/hive-hcatalog/hive-hcatalog-server-extensions)
+        * Hive HCatalog Streaming (org.apache.hive.hcatalog:hive-hcatalog-streaming:3.1.3 - https://hive.apache.org/hive-hcatalog/hive-hcatalog-streaming)
+        * Hive HCatalog Webhcat Java Client (org.apache.hive.hcatalog:hive-webhcat-java-client:3.1.3 - https://hive.apache.org/hive-hcatalog/hive-webhcat-java-client)
+        * Hive Llap Client (org.apache.hive:hive-llap-client:3.1.3 - https://hive.apache.org/hive-llap-client)
+        * Hive Llap Common (org.apache.hive:hive-llap-common:3.1.3 - https://hive.apache.org/hive-llap-common)
+        * Hive Llap Server (org.apache.hive:hive-llap-server:3.1.3 - https://hive.apache.org/hive-llap-server)
+        * Hive Llap Tez (org.apache.hive:hive-llap-tez:3.1.3 - https://hive.apache.org/hive-llap-tez)
+        * Hive Metastore (org.apache.hive:hive-metastore:3.1.3 - https://hive.apache.org/hive-metastore)
+        * Hive Query Language (org.apache.hive:hive-exec:3.1.3 - https://hive.apache.org/hive-exec)
+        * Hive Serde (org.apache.hive:hive-serde:3.1.3 - https://hive.apache.org/hive-serde)
+        * Hive Service (org.apache.hive:hive-service:3.1.3 - https://hive.apache.org/hive-service)
+        * Hive Service RPC (org.apache.hive:hive-service-rpc:3.1.3 - https://hive.apache.org/hive-service-rpc)
+        * Hive Shims (org.apache.hive:hive-shims:3.1.3 - https://hive.apache.org/hive-shims)
+        * Hive Shims 0.23 (org.apache.hive.shims:hive-shims-0.23:3.1.3 - https://hive.apache.org/hive-shims-0.23)
+        * Hive Shims Common (org.apache.hive.shims:hive-shims-common:3.1.3 - https://hive.apache.org/hive-shims-common)
+        * Hive Shims Scheduler (org.apache.hive.shims:hive-shims-scheduler:3.1.3 - https://hive.apache.org/hive-shims-scheduler)
+        * Hive Standalone Metastore (org.apache.hive:hive-standalone-metastore:3.1.3 - https://www.apache.org/hive-standalone-metastore/)
+        * Hive Storage API (org.apache.hive:hive-storage-api:2.7.0 - https://www.apache.org/hive-storage-api/)
+        * Hive Upgrade Acid (org.apache.hive:hive-upgrade-acid:3.1.3 - https://www.apache.org/hive-upgrade-acid/)
+        * Hive Vector-Code-Gen Utilities (org.apache.hive:hive-vector-code-gen:3.1.3 - https://hive.apache.org/hive-vector-code-gen)
+        * HPPC Collections (com.carrotsearch:hppc:0.7.2 - http://labs.carrotsearch.com/hppc.html/hppc)
+        * htrace-core (org.apache.htrace:htrace-core:3.2.0-incubating - http://incubator.apache.org/projects/htrace.html)
         * htrace-core4 (org.apache.htrace:htrace-core4:4.2.0-incubating - http://incubator.apache.org/projects/htrace.html)
         * j2html (com.j2html:j2html:1.0.0 - http://j2html.com)
         * J2ObjC Annotations (com.google.j2objc:j2objc-annotations:1.1 - https://github.com/google/j2objc/)
@@ -870,15 +861,11 @@ The license texts of these dependencies can be found in the licenses directory.
         * Jackson module: Afterburner (com.fasterxml.jackson.module:jackson-module-afterburner:2.10.5 - https://github.com/FasterXML/jackson-modules-base)
         * Jackson module: JAXB Annotations (com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.10.5 - https://github.com/FasterXML/jackson-modules-base)
         * Jackson-module-parameter-names (com.fasterxml.jackson.module:jackson-module-parameter-names:2.10.5 - https://github.com/FasterXML/jackson-modules-java8/jackson-module-parameter-names)
-
-        * jasper-compiler (tomcat:jasper-compiler:5.5.23 - http://tomcat.apache.org/jasper-compiler)
-        * jasper-runtime (tomcat:jasper-runtime:5.5.23 - http://tomcat.apache.org/jasper-runtime)
-        * Java Authentication SPI for Containers (org.apache.geronimo.specs:geronimo-jaspic_1.0_spec:1.0 - http://geronimo.apache.org/maven/specs/geronimo-jaspic_1.0_spec/1.0)
+        * Java Concurrency Tools Core Library (org.jctools:jctools-core:2.0.1 - https://github.com/JCTools)
         * java-util (com.cedarsoftware:java-util:1.9.0 - https://github.com/jdereg/java-util)
         * javax.inject (javax.inject:javax.inject:1 - http://code.google.com/p/atinject/)
         * JBoss Logging 3 (org.jboss.logging:jboss-logging:3.3.0.Final - http://www.jboss.org)
         * JCIP Annotations under Apache License (com.github.stephenc.jcip:jcip-annotations:1.0-1 - http://stephenc.github.com/jcip-annotations)
-        * JCommander (com.beust:jcommander:1.30 - http://beust.com/jcommander)
         * JDO API (javax.jdo:jdo-api:3.0.1 - http://db.apache.org/jdo)
         * JDO API (org.datanucleus:javax.jdo:3.2.0-m3 - http://www.datanucleus.org/#/javax.jdo)
         * Jettison (org.codehaus.jettison:jettison:1.1 - no url defined)
@@ -889,9 +876,21 @@ The license texts of these dependencies can be found in the licenses directory.
         * JSON.simple (com.googlecode.json-simple:json-simple:1.1 - http://code.google.com/p/json-simple/)
         * json-io (com.cedarsoftware:json-io:2.5.1 - https://github.com/jdereg/json-io)
         * JSON Small and Fast Parser (net.minidev:json-smart:2.3 - http://www.minidev.net/)
-        * JTA 1.1 (org.apache.geronimo.specs:geronimo-jta_1.1_spec:1.1.1 - http://geronimo.apache.org/specs/geronimo-jta_1.1_spec)
         * JVM Integration for Metrics (io.dropwizard.metrics:metrics-jvm:3.2.6 - http://metrics.dropwizard.io/metrics-jvm/)
         * LZ4 and xxHash (net.jpountz.lz4:lz4:1.3.0 - https://github.com/jpountz/lz4-java)
+        * Maven Artifact (org.apache.maven:maven-artifact:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-artifact/)
+        * Maven Artifact Resolver API (org.apache.maven.resolver:maven-resolver-api:1.3.3 - https://maven.apache.org/resolver/maven-resolver-api/)
+        * Maven Artifact Resolver Connector Basic (org.apache.maven.resolver:maven-resolver-connector-basic:1.3.3 - https://maven.apache.org/resolver/maven-resolver-connector-basic/)
+        * Maven Artifact Resolver Implementation (org.apache.maven.resolver:maven-resolver-impl:1.3.3 - https://maven.apache.org/resolver/maven-resolver-impl/)
+        * Maven Artifact Resolver Provider (org.apache.maven:maven-resolver-provider:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-resolver-provider/)
+        * Maven Artifact Resolver SPI (org.apache.maven.resolver:maven-resolver-spi:1.3.3 - https://maven.apache.org/resolver/maven-resolver-spi/)
+        * Maven Artifact Resolver Transport File (org.apache.maven.resolver:maven-resolver-transport-file:1.3.3 - https://maven.apache.org/resolver/maven-resolver-transport-file/)
+        * Maven Artifact Resolver Transport HTTP (org.apache.maven.resolver:maven-resolver-transport-http:1.3.3 - https://maven.apache.org/resolver/maven-resolver-transport-http/)
+        * Maven Artifact Resolver Utilities (org.apache.maven.resolver:maven-resolver-util:1.3.3 - https://maven.apache.org/resolver/maven-resolver-util/)
+        * Maven Builder Support (org.apache.maven:maven-builder-support:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-builder-support/)
+        * Maven Model (org.apache.maven:maven-model:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-model/)
+        * Maven Model Builder (org.apache.maven:maven-model-builder:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-model-builder/)
+        * Maven Repository Metadata Model (org.apache.maven:maven-repository-metadata:3.6.0 - https://maven.apache.org/ref/3.6.0/maven-repository-metadata/)
         * Metrics Core (io.dropwizard.metrics:metrics-core:3.2.6 - http://metrics.dropwizard.io/metrics-core/)
         * Metrics Health Checks (io.dropwizard.metrics:metrics-healthchecks:4.0.5 - http://metrics.dropwizard.io/metrics-healthchecks)
         * Metrics Integration for Jersey 2.x (io.dropwizard.metrics:metrics-jersey2:4.0.5 - http://metrics.dropwizard.io/metrics-jersey2)
@@ -899,16 +898,28 @@ The license texts of these dependencies can be found in the licenses directory.
         * Metrics Integration for Logback (io.dropwizard.metrics:metrics-logback:4.0.5 - http://metrics.dropwizard.io/metrics-logback)
         * Metrics Integration with JMX (io.dropwizard.metrics:metrics-jmx:4.0.5 - http://metrics.dropwizard.io/metrics-jmx)
         * Metrics Utility Servlets (io.dropwizard.metrics:metrics-servlets:4.0.5 - http://metrics.dropwizard.io/metrics-servlets)
+        * Netty/All-in-One (io.netty:netty-all:4.1.30.Final - http://netty.io/netty-all/)
+        * Netty/Buffer (io.netty:netty-buffer:4.1.30.Final - http://netty.io/netty-buffer/)
+        * Netty/Codec (io.netty:netty-codec:4.1.30.Final - http://netty.io/netty-codec/)
+        * Netty/Common (io.netty:netty-common:4.1.30.Final - http://netty.io/netty-common/)
+        * Netty/Handler (io.netty:netty-handler:4.1.30.Final - http://netty.io/netty-handler/)
+        * Netty/Resolver (io.netty:netty-resolver:4.1.30.Final - http://netty.io/netty-resolver/)
+        * Netty/Transport/Native/Epoll (io.netty:netty-transport-native-epoll:4.1.30.Final - http://netty.io/netty-transport-native-epoll/)
+        * Netty/Transport/Native/Unix/Common (io.netty:netty-transport-native-unix-common:4.1.30.Final - http://netty.io/netty-transport-native-unix-common/)
+        * Netty/Transport (io.netty:netty-transport:4.1.30.Final - http://netty.io/netty-transport/)
+        * Netty (io.netty:netty:3.10.5.Final - http://netty.io/)
         * Nimbus JOSE+JWT (com.nimbusds:nimbus-jose-jwt:7.9 - https://bitbucket.org/connect2id/nimbus-jose-jwt)
         * Objenesis (org.objenesis:objenesis:2.5.1 - http://objenesis.org)
         * OkHttp (com.squareup.okhttp:okhttp:2.7.5 - https://github.com/square/okhttp/okhttp)
         * Okio (com.squareup.okio:okio:1.6.0 - https://github.com/square/okio/okio)
         * opencsv (net.sf.opencsv:opencsv:2.3 - http://opencsv.sf.net)
         * Open JSON (com.tdunning:json:1.8 - https://github.com/tdunning/open-json)
-        * ORC Core (org.apache.orc:orc-core:1.3.4 - http://orc.apache.org/orc-core)
-        * oro (oro:oro:2.0.8 - no url defined)
-        * slice (io.airlift:slice:0.29 - https://github.com/airlift/slice)
-        * Slider Core (org.apache.slider:slider-core:0.90.2-incubating - http://slider.incubator.apache.org/slider-core/)
+        * ORC Core (org.apache.orc:orc-core:1.5.8 - http://orc.apache.org/orc-core)
+        * ORC Shims (org.apache.orc:orc-shims:1.5.8 - http://orc.apache.org/orc-shims)
+        * Plexus :: Component Annotations (org.codehaus.plexus:plexus-component-annotations:1.7.1 - http://codehaus-plexus.github.io/plexus-containers/plexus-component-annotations/)
+        * Plexus Common Utilities (org.codehaus.plexus:plexus-utils:3.1.0 - http://codehaus-plexus.github.io/plexus-utils/)
+        * Plexus Interpolation API (org.codehaus.plexus:plexus-interpolation:1.25 - http://codehaus-plexus.github.io/plexus-interpolation/)
+        * reload4j (ch.qos.reload4j:reload4j:1.2.19 - https://reload4j.qos.ch)
         * SnakeYAML (org.yaml:snakeyaml:2.0 - https://bitbucket.org/snakeyaml/snakeyaml)
         * Snappy for Java (org.xerial.snappy:snappy-java:1.0.5 - http://github.com/xerial/snappy-java/)
         * snappy-java (org.xerial.snappy:snappy-java:1.1.2.6 - https://github.com/xerial/snappy-java)
@@ -916,29 +927,10 @@ The license texts of these dependencies can be found in the licenses directory.
         * Tephra API (co.cask.tephra:tephra-api:0.6.0 - https://github.com/caskdata/tephra/tephra-api)
         * Tephra Core (co.cask.tephra:tephra-core:0.6.0 - https://github.com/caskdata/tephra/tephra-core)
         * Tephra HBase 1.0 Compatibility (co.cask.tephra:tephra-hbase-compat-1.0:0.6.0 - https://github.com/caskdata/tephra/tephra-hbase-compat-1.0)
-        * Log4j Implemented Over SLF4J (org.slf4j:log4j-over-slf4j:1.7.36 - http://www.slf4j.org)
-        * Jetty :: Aggregate :: All core Jetty (org.eclipse.jetty.aggregate:jetty-all:7.6.0.v20120127 - http://www.eclipse.org/jetty/jetty-aggregate-project/jetty-all)
-        * Jetty :: Continuation (org.eclipse.jetty:jetty-continuation:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Http Utility (org.eclipse.jetty:jetty-http:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: IO Utility (org.eclipse.jetty:jetty-io:9.4.45.v20220203 - http://www.eclipse.org/jetty)tty)
-        * Jetty :: Security (org.eclipse.jetty:jetty-security:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Server Core (org.eclipse.jetty:jetty-server:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Servlet Handling (org.eclipse.jetty:jetty-servlet:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: SetUID Java (org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3 - http://www.eclipse.org/jetty/jetty-toolchain/jetty-setuid-parent/jetty-setuid-java)
-        * Jetty :: Utilities (org.eclipse.jetty:jetty-util:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Utilities :: Ajax(JSON) (org.eclipse.jetty:jetty-util-ajax:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Utility Servlets and Filters (org.eclipse.jetty:jetty-servlets:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: Webapp Application Support (org.eclipse.jetty:jetty-webapp:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty :: XML utilities (org.eclipse.jetty:jetty-xml:9.4.45.v20220203 - http://www.eclipse.org/jetty)
-        * Jetty Orbit :: Servlet API (org.eclipse.jetty.orbit:javax.servlet:3.0.0.v201112011016 - http://www.eclipse.org/jetty/jetty-orbit/javax.servlet)
-        * Jetty Server (org.mortbay.jetty:jetty:6.1.26 - http://www.eclipse.org/jetty/jetty-parent/project/modules/jetty)
-        * Jetty Utilities (org.mortbay.jetty:jetty-util:6.1.26 - http://www.eclipse.org/jetty/jetty-parent/project/jetty-util)
-        * JAX-RS provider for JSON content type (org.codehaus.jackson:jackson-jaxrs:1.9.13 - http://jackson.codehaus.org)
-        * Xml Compatibility extensions for Jackson (org.codehaus.jackson:jackson-xc:1.9.13 - http://jackson.codehaus.org)
-        * Javassist (org.javassist:javassist:3.24.1-GA - http://www.javassist.org/)
-        * RocksDB JNI (org.rocksdb:rocksdbjni:6.27.3 - https://rocksdb.org)
-        * JCTools Core (org.jctools:jctools-core:2.0.1 - http://jctools.github.io/JCTools/)
-        * Bean Validation API (javax.validation:validation-api:2.0.1.Final - http://beanvalidation.org)
+        * Woodstox (com.fasterxml.woodstox:woodstox-core:5.0.3 - https://github.com/FasterXML/woodstox)
+
+    Apache License, Version 2.0, BSD 2-Clause, Eclipse Distribution License, Version 1.0, Eclipse Public License, Version 2.0, jQuery license, MIT License, Modified BSD, Public Domain, The GNU General Public License (GPL), Version 2, With Classpath Exception, W3C license
+
         * jersey-container-grizzly2-http (org.glassfish.jersey.containers:jersey-container-grizzly2-http:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-container-grizzly2-http)
         * jersey-container-grizzly2-servlet (org.glassfish.jersey.containers:jersey-container-grizzly2-servlet:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-container-grizzly2-servlet)
         * jersey-container-servlet (org.glassfish.jersey.containers:jersey-container-servlet:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-container-servlet)
@@ -948,36 +940,94 @@ The license texts of these dependencies can be found in the licenses directory.
         * jersey-ext-metainf-services (org.glassfish.jersey.ext:jersey-metainf-services:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-metainf-services)
         * jersey-inject-hk2 (org.glassfish.jersey.inject:jersey-hk2:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-hk2)
         * jersey-media-jaxb (org.glassfish.jersey.media:jersey-media-jaxb:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/project/jersey-media-jaxb)
+
+    Apache License, Version 2.0, Eclipse Public License, Version 2.0, Modified BSD, The GNU General Public License (GPL), Version 2, With Classpath Exception
+
         * jersey-core-server (org.glassfish.jersey.core:jersey-server:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/jersey-server)
+
+    Apache License, Version 2.0, Eclipse Public License, Version 2.0, Public Domain, The GNU General Public License (GPL), Version 2, With Classpath Exception
+
         * jersey-core-common (org.glassfish.jersey.core:jersey-common:2.29 - https://projects.eclipse.org/projects/ee4j.jersey/jersey-common)
-        * Hibernate Validator Engine (org.hibernate.validator:hibernate-validator:6.0.17.Final - http://hibernate.org/validator/hibernate-validator)
-        * Woodstox (com.fasterxml.woodstox:woodstox-core:5.0.3 - https://github.com/FasterXML/woodstox)
+
+    Apache License, Version 2.0, Eclipse Public License - Version 1.0
+
+        * Apache :: JSTL module (org.eclipse.jetty:apache-jstl:9.4.45.v20220203 - http://tomcat.apache.org/taglibs/standard/)
+        * Jetty :: Apache JSP Implementation (org.eclipse.jetty:apache-jsp:9.4.45.v20220203 - https://eclipse.org/jetty/apache-jsp)
+        * Jetty :: Asynchronous HTTP Client (org.eclipse.jetty:jetty-client:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-client)
+        * Jetty :: Continuation (org.eclipse.jetty:jetty-continuation:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-continuation)
+        * Jetty :: Http Utility (org.eclipse.jetty:jetty-http:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-http)
+        * Jetty :: IO Utility (org.eclipse.jetty:jetty-io:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-io)
+        * Jetty :: JAAS (org.eclipse.jetty:jetty-jaas:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-jaas)
+        * Jetty :: JNDI Naming (org.eclipse.jetty:jetty-jndi:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-jndi)
+        * Jetty :: Plus (org.eclipse.jetty:jetty-plus:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-plus)
+        * Jetty :: Rewrite Handler (org.eclipse.jetty:jetty-rewrite:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-rewrite)
+        * Jetty :: Runner (org.eclipse.jetty:jetty-runner:9.3.20.v20170531 - http://www.eclipse.org/jetty)
+        * Jetty :: Schemas (org.eclipse.jetty.toolchain:jetty-schemas:3.1.2 - https://eclipse.org/jetty/jetty-schemas)
+        * Jetty :: Security (org.eclipse.jetty:jetty-security:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-security)
+        * Jetty :: Server Core (org.eclipse.jetty:jetty-server:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-server)
+        * Jetty :: Servlet Annotations (org.eclipse.jetty:jetty-annotations:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-annotations)
+        * Jetty :: Servlet Handling (org.eclipse.jetty:jetty-servlet:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-servlet)
+        * Jetty :: SetUID Java (org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3 - http://www.eclipse.org/jetty/jetty-toolchain/jetty-setuid-parent/jetty-setuid-java)
+        * Jetty :: Utilities :: Ajax(JSON) (org.eclipse.jetty:jetty-util-ajax:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-util-ajax)
+        * Jetty :: Utilities (org.eclipse.jetty:jetty-util:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-util)
+        * Jetty :: Utility Servlets and Filters (org.eclipse.jetty:jetty-servlets:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-servlets)
+        * Jetty :: Webapp Application Support (org.eclipse.jetty:jetty-webapp:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-webapp)
+        * Jetty :: Websocket :: API (org.eclipse.jetty.websocket:websocket-api:9.4.45.v20220203 - https://eclipse.org/jetty/websocket-parent/websocket-api)
+        * Jetty :: Websocket :: Client (org.eclipse.jetty.websocket:websocket-client:9.4.45.v20220203 - https://eclipse.org/jetty/websocket-parent/websocket-client)
+        * Jetty :: Websocket :: Common (org.eclipse.jetty.websocket:websocket-common:9.4.45.v20220203 - https://eclipse.org/jetty/websocket-parent/websocket-common)
+        * Jetty :: Websocket :: Server (org.eclipse.jetty.websocket:websocket-server:9.4.45.v20220203 - https://eclipse.org/jetty/websocket-parent/websocket-server)
+        * Jetty :: Websocket :: Servlet Interface (org.eclipse.jetty.websocket:websocket-servlet:9.4.45.v20220203 - https://eclipse.org/jetty/websocket-parent/websocket-servlet)
+        * Jetty :: XML utilities (org.eclipse.jetty:jetty-xml:9.4.45.v20220203 - https://eclipse.org/jetty/jetty-xml)
+        * Jetty Server (org.mortbay.jetty:jetty:6.1.26 - http://www.eclipse.org/jetty/jetty-parent/project/modules/jetty)
+        * Jetty Utilities (org.mortbay.jetty:jetty-util:6.1.26 - http://www.eclipse.org/jetty/jetty-parent/project/jetty-util)
+
+    Apache License, Version 2.0, GNU General Public License, version 2
+
+        * RocksDB JNI (org.rocksdb:rocksdbjni:6.27.3 - https://rocksdb.org)
+
+    Apache License, Version 2.0, GNU Lesser General Public License (LGPL), Version 2.1
+
+        * JAX-RS provider for JSON content type (org.codehaus.jackson:jackson-jaxrs:1.9.13 - http://jackson.codehaus.org)
+        * Xml Compatibility extensions for Jackson (org.codehaus.jackson:jackson-xc:1.9.13 - http://jackson.codehaus.org)
+
+    Apache License, Version 2.0, LGPL 2.1, MPL 1.1
+
+        * Javassist (org.javassist:javassist:3.24.1-GA - http://www.javassist.org/)
+
+    Apache License (v2.0)
+
+        * FlatBuffers Java API (com.vlkan:flatbuffers:1.2.0-3f79e055 - https://github.com/vy/flatbuffers)
+
+    BSD-3-Clause
+
+        * asm-analysis (org.ow2.asm:asm-analysis:9.2 - http://asm.ow2.io/)
+        * asm-commons (org.ow2.asm:asm-commons:9.2 - http://asm.ow2.io/)
+        * asm-tree (org.ow2.asm:asm-tree:9.2 - http://asm.ow2.io/)
 
     BSD 3-Clause License
 
-        * ASM Commons (asm:asm-commons:3.1 - http://asm.objectweb.org/asm-commons/)
         * ASM Core (asm:asm:3.1 - http://asm.objectweb.org/asm/)
-        * ASM Tree (asm:asm-tree:3.1 - http://asm.objectweb.org/asm-tree/)
-        * ASM Core (org.ow2.asm:asm:5.0.4 - http://asm.objectweb.org/asm/)
-        * leveldbjni-all (org.fusesource.leveldbjni:leveldbjni-all:1.8 - http://leveldbjni.fusesource.org/leveldbjni-all)
-        * ANTLR 3 Runtime (org.antlr:antlr-runtime:3.5.2 - http://www.antlr.org)
-        * ANTLR ST4 4.0.4 (org.antlr:ST4:4.0.4 - http://www.stringtemplate.org)
-        * ParaNamer Core (com.thoughtworks.paranamer:paranamer:2.3 - http://paranamer.codehaus.org/paranamer)
-        * Stax2 API (org.codehaus.woodstox:stax2-api:3.1.4 - http://wiki.fasterxml.com/WoodstoxStax2)
-        * xmlenc Library (xmlenc:xmlenc:0.52 - http://xmlenc.sourceforge.net)
         * Commons Compiler (org.codehaus.janino:commons-compiler:2.7.6 - http://docs.codehaus.org/display/JANINO/Home/commons-compiler)
         * Janino (org.codehaus.janino:janino:2.7.6 - http://docs.codehaus.org/display/JANINO/Home/janino)
-        * Kryo (com.esotericsoftware:kryo:4.0.2 - https://github.com/EsotericSoftware/kryo/kryo)
-        * Kryo Shaded (com.esotericsoftware:kryo-shaded:4.0.2 - https://github.com/EsotericSoftware/kryo/kryo-shaded)
+        * leveldbjni-all (org.fusesource.leveldbjni:leveldbjni-all:1.8 - http://leveldbjni.fusesource.org/leveldbjni-all)
         * MinLog (com.esotericsoftware:minlog:1.3.0 - https://github.com/EsotericSoftware/minlog)
         * Protocol Buffer Java API (com.google.protobuf:protobuf-java:2.5.0 - http://code.google.com/p/protobuf)
         * Protocol Buffers [Core] (com.google.protobuf:protobuf-java:3.1.0 - https://developers.google.com/protocol-buffers/protobuf-java/)
         * ReflectASM (com.esotericsoftware:reflectasm:1.11.3 - https://github.com/EsotericSoftware/reflectasm)
-    
-    BSD 2-Clause License
-    
-        * JLine (jline:jline:0.9.94 - http://jline.sourceforge.net)
+
+    BSD licence
+
+        * ANTLR 3 Runtime (org.antlr:antlr-runtime:3.5.2 - http://www.antlr.org)
+        * ANTLR ST4 4.0.4 (org.antlr:ST4:4.0.4 - http://www.stringtemplate.org)
+
+    BSD License
+
+        * ASM Core (org.ow2.asm:asm:5.0.4 - http://asm.objectweb.org/asm/)
         * Javolution (javolution:javolution:5.5.1 - http://javolution.org)
+        * JLine (jline:jline:0.9.94 - http://jline.sourceforge.net)
+        * ParaNamer Core (com.thoughtworks.paranamer:paranamer:2.3 - http://paranamer.codehaus.org/paranamer)
+        * Stax2 API (org.codehaus.woodstox:stax2-api:3.1.4 - http://wiki.fasterxml.com/WoodstoxStax2)
+        * xmlenc Library (xmlenc:xmlenc:0.52 - http://xmlenc.sourceforge.net)
 
     Common Development and Distribution License
 
@@ -985,21 +1035,18 @@ The license texts of these dependencies can be found in the licenses directory.
         * Expression Language 3.0 (org.glassfish:javax.el:3.0.1-b12 - http://uel.java.net)
         * JavaServer Pages(TM) API (javax.servlet.jsp:javax.servlet.jsp-api:2.3.1 - http://jsp.java.net)
         * Java Servlet API (javax.servlet:javax.servlet-api:3.1.0 - http://servlet-spec.java.net)
-        * JSP implementation (org.glassfish.web:javax.servlet.jsp:2.3.2 - http://jsp.java.net)
         * javax.annotation API (javax.annotation:javax.annotation-api:1.3.2 - http://jcp.org/en/jsr/detail?id=250)
-
-    Common Development and Distribution License (CDDL) v1.0
-
-        * JavaBeans(TM) Activation Framework (javax.activation:activation:1.1.1 - http://java.sun.com/javase/technologies/desktop/javabeans/jaf/index.jsp)
-        * JavaMail API (javax.mail:mail:1.4.1 - https://glassfish.dev.java.net/javaee5/mail/)
+        * JSP implementation (org.glassfish.web:javax.servlet.jsp:2.3.2 - http://jsp.java.net)
 
     Common Development and Distribution License (CDDL) v1.1
 
         * Java Transaction API (javax.transaction:jta:1.1 - http://java.sun.com/products/jta)
-        * jsp-api (javax.servlet:jsp-api:2.0 - no url defined)
         * jsp-api (javax.servlet.jsp:jsp-api:2.1 - no url defined)
         * servlet-api (javax.servlet:servlet-api:2.5 - no url defined)
         * transaction-api (javax.transaction:transaction-api:1.1 - no url defined)
+
+    Common Development and Distribution License (CDDL) v1.1, The GNU General Public License (GPL), Version 2, With Classpath Exception
+
         * javax.ws.rs-api (javax.ws.rs:javax.ws.rs-api:2.0.1 - http://jax-rs-spec.java.net)
         * jaxb-api (javax.xml.bind:jaxb-api:2.3.0 - https://github.com/javaee/jaxb-spec/jaxb-api)
         * JAXB RI (com.sun.xml.bind:jaxb-impl:2.2.3-1 - http://jaxb.java.net/)
@@ -1009,60 +1056,70 @@ The license texts of these dependencies can be found in the licenses directory.
         * jersey-json (com.sun.jersey:jersey-json:1.9 - https://jersey.java.net/jersey-json/)
         * jersey-server (com.sun.jersey:jersey-server:1.9 - https://jersey.java.net/jersey-server/)
 
+    Eclipse Distribution License, Version 1.0
+
+        * jakarta.xml.bind-api (jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 - https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api)
+        * JavaBeans Activation Framework (com.sun.activation:jakarta.activation:1.2.1 - https://github.com/eclipse-ee4j/jaf/jakarta.activation)
+        * JavaBeans Activation Framework API jar (jakarta.activation:jakarta.activation-api:1.2.1 - https://github.com/eclipse-ee4j/jaf/jakarta.activation-api)
+
     Eclipse Public License, Version 1.0
-    
-        * tools.logging (org.clojure:tools.logging:0.2.3 - http://nexus.sonatype.org/oss-repository-hosting.html/pom.contrib/tools.logging)
+
         * clojure (org.clojure:clojure:1.10.0 - http://clojure.org/)
         * core.specs.alpha (org.clojure:core.specs.alpha:0.2.44 - https://github.com/clojure/build.poms/core.specs.alpha)
         * spec.alpha (org.clojure:spec.alpha:0.2.176 - https://github.com/clojure/build.poms/spec.alpha)
-        * JGraphT (org.jgrapht:jgrapht-core:0.9.0 - https://jgrapht.org/)
-        
+        * tools.logging (org.clojure:tools.logging:0.2.3 - http://nexus.sonatype.org/oss-repository-hosting.html/pom.contrib/tools.logging)
+
     Eclipse Public License, Version 2.0
-    
-        * jakarta.annotation API (jakarta.annotation:jakarta.annotation-api:1.3.4 - https://projects.eclipse.org/projects/ee4j.ca)
-        * Expression Language 3.0 API (jakarta.el:jakarta.el-api:3.0.2 - https://projects.eclipse.org/projects/ee4j.el)
-        * Java Servlet API (jakarta.servlet:jakarta.servlet-api:4.0.2 - https://projects.eclipse.org/projects/ee4j.servlet)
-        * javax.ws.rs-api (jakarta.ws.rs:jakarta.ws.rs-api:2.1.5 - https://github.com/eclipse-ee4j/jaxrs-api)
+
         * grizzly-framework (org.glassfish.grizzly:grizzly-framework:2.4.4 - https://projects.eclipse.org/projects/ee4j.grizzly/grizzly-framework)
         * grizzly-http (org.glassfish.grizzly:grizzly-http:2.4.4 - https://projects.eclipse.org/projects/ee4j.grizzly/grizzly-http)
         * grizzly-http-server (org.glassfish.grizzly:grizzly-http-server:2.4.4 - https://projects.eclipse.org/projects/ee4j.grizzly/grizzly-http-server)
         * grizzly-http-servlet (org.glassfish.grizzly:grizzly-http-servlet:2.4.4 - https://projects.eclipse.org/projects/ee4j.grizzly/grizzly-http-servlet)
+
+    Eclipse Public License, Version 2.0, The GNU General Public License (GPL), Version 2, With Classpath Exception
+
         * aopalliance version 1.0 repackaged as a module (org.glassfish.hk2.external:aopalliance-repackaged:2.5.0 - https://github.com/eclipse-ee4j/glassfish-hk2/external/aopalliance-repackaged)
+        * Expression Language 3.0 (org.glassfish:jakarta.el:3.0.2 - https://projects.eclipse.org/projects/ee4j.el)
+        * Expression Language 3.0 API (jakarta.el:jakarta.el-api:3.0.2 - https://projects.eclipse.org/projects/ee4j.el)
         * HK2 API module (org.glassfish.hk2:hk2-api:2.5.0 - https://github.com/eclipse-ee4j/glassfish-hk2/hk2-api)
         * HK2 Implementation Utilities (org.glassfish.hk2:hk2-utils:2.5.0 - https://github.com/eclipse-ee4j/glassfish-hk2/hk2-utils)
+        * jakarta.annotation API (jakarta.annotation:jakarta.annotation-api:1.3.4 - https://projects.eclipse.org/projects/ee4j.ca)
+        * Java Servlet API (jakarta.servlet:jakarta.servlet-api:4.0.2 - https://projects.eclipse.org/projects/ee4j.servlet)
         * javax.inject:1 as OSGi bundle (org.glassfish.hk2.external:jakarta.inject:2.5.0 - https://github.com/eclipse-ee4j/glassfish-hk2/external/jakarta.inject)
+        * javax.ws.rs-api (jakarta.ws.rs:jakarta.ws.rs-api:2.1.5 - https://github.com/eclipse-ee4j/jaxrs-api)
         * OSGi resource locator (org.glassfish.hk2:osgi-resource-locator:1.0.3 - https://projects.eclipse.org/projects/ee4j/osgi-resource-locator)
         * ServiceLocator Default Implementation (org.glassfish.hk2:hk2-locator:2.5.0 - https://github.com/eclipse-ee4j/glassfish-hk2/hk2-locator)
-        * Expression Language 3.0 (org.glassfish:jakarta.el:3.0.2 - https://projects.eclipse.org/projects/ee4j.el)
-        * jms (jakarta.jms:jakarta.jms-api:2.0.2 - https://projects.eclipse.org/projects/ee4j.jms)
-        
-    Eclipse Distribution License, Version 1.0
-        * JavaBeans Activation Framework (com.sun.activation:jakarta.activation:1.2.1 - https://github.com/eclipse-ee4j/jaf/jakarta.activation)
-        * JavaBeans Activation Framework API jar (jakarta.activation:jakarta.activation-api:1.2.1 - https://github.com/eclipse-ee4j/jaf/jakarta.activation-api)
-        * jakarta.xml.bind-api (jakarta.xml.bind:jakarta.xml.bind-api:2.3.2 - https://github.com/eclipse-ee4j/jaxb-api/jakarta.xml.bind-api)
 
-    GNU General Public License (GPL), version 2, with the Classpath exception
-        
-        * Java Object Layout: Core (org.openjdk.jol:jol-core:0.2 - http://maven.apache.org)
-        
+    Eclipse Public License (EPL) 1.0, GNU Lesser General Public License Version 2.1, February 1999
+
+        * JGraphT - Core (org.jgrapht:jgrapht-core:0.9.0 - http://www.jgrapht.org/jgrapht-core)
+
+    Eclipse Public License v. 2.0, GNU General Public License, version 2 with the GNU Classpath Exception
+
+        * jms (jakarta.jms:jakarta.jms-api:2.0.2 - https://projects.eclipse.org/projects/ee4j.jms)
+
     MIT License
 
         * Animal Sniffer Annotations (org.codehaus.mojo:animal-sniffer-annotations:1.17 - http://www.mojohaus.org/animal-sniffer/animal-sniffer-annotations)
         * argparse4j (net.sourceforge.argparse4j:argparse4j:0.8.1 - http://argparse4j.github.io)
         * Checker Qual (org.checkerframework:checker-qual:2.5.2 - https://checkerframework.org)
-        * JCodings (org.jruby.jcodings:jcodings:1.0.18 - http://nexus.sonatype.org/oss-repository-hosting.html/jcodings)
-        * Joni (org.jruby.joni:joni:2.1.11 - http://nexus.sonatype.org/oss-repository-hosting.html/joni)
         * JCL 1.2 implemented over SLF4J (org.slf4j:jcl-over-slf4j:1.7.25 - http://www.slf4j.org)
         * JCL 1.2 implemented over SLF4J (org.slf4j:jcl-over-slf4j:1.7.26 - http://www.slf4j.org)
+        * JCodings (org.jruby.jcodings:jcodings:1.0.18 - http://nexus.sonatype.org/oss-repository-hosting.html/jcodings)
+        * Joni (org.jruby.joni:joni:2.1.11 - http://nexus.sonatype.org/oss-repository-hosting.html/joni)
         * JUL to SLF4J bridge (org.slf4j:jul-to-slf4j:1.7.26 - http://www.slf4j.org)
         * Microsoft JDBC Driver for SQL Server (com.microsoft.sqlserver:mssql-jdbc:6.2.1.jre7 - https://github.com/Microsoft/mssql-jdbc)
         * SLF4J API Module (org.slf4j:slf4j-api:1.7.36 - http://www.slf4j.org)
-        * Sysout over SLF4J (uk.org.lidalia:sysout-over-slf4j:1.0.2 - http://projects.lidalia.org.uk/sysout-over-slf4j/)
         * SLF4J Reload4j Binding (org.slf4j:slf4j-reload4j:1.7.36 - http://reload4j.qos.ch)
+        * System Out and Err redirected to SLF4J (uk.org.lidalia:sysout-over-slf4j:1.0.2 - http://projects.lidalia.org.uk/sysout-over-slf4j/)
+
+    Modified BSD License
+
+        * sqlline (sqlline:sqlline:1.3.0 - http://github.com/julianhyde/sqlline)
 
     Mozilla Public License Version 2.0
 
-        * jamon-runtime (org.jamon:jamon-runtime:2.4.1 - http://www.jamon.org/jamon-java-parent/jamon-runtime/)     
+        * jamon-runtime (org.jamon:jamon-runtime:2.4.1 - http://www.jamon.org/jamon-java-parent/jamon-runtime/)
 
     Public Domain
 

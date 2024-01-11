@@ -28,6 +28,13 @@
     <artifactId>multilang-python</artifactId>
     <packaging>jar</packaging>
     <name>multilang-python</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

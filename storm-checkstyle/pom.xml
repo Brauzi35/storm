@@ -29,6 +29,13 @@
     <artifactId>storm-checkstyle</artifactId>
     <name>Apache Storm - Checkstyle</name>
     <description>Module to hold Checkstyle properties for Storm.</description>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

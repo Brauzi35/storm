@@ -27,7 +27,7 @@
 
     <artifactId>storm-elasticsearch-examples</artifactId>
     <properties>
-        <elasticsearch.test.version>2.4.4</elasticsearch.test.version>
+        <elasticsearch.test.version>2.4.4</elasticsearch.test.version> <!-- was 8.6.2 -->
     </properties>
 
     <dependencies>
@@ -46,6 +46,11 @@
             <groupId>org.elasticsearch</groupId>
             <artifactId>elasticsearch</artifactId>
             <version>${elasticsearch.test.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
         </dependency>
     </dependencies>
 

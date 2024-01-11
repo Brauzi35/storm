@@ -31,7 +31,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.dependency.version>3.6.0</maven.dependency.version>
+    <maven.dependency.version>3.9.0</maven.dependency.version>
   </properties>
 
   <dependencies>
@@ -51,6 +51,11 @@
       <version>${maven.dependency.version}</version>
       <scope>provided</scope>
     </dependency>
+      <dependency>
+          <groupId>org.apache.storm</groupId>
+          <artifactId>storm-core</artifactId>
+          <version>2.4.0</version>
+      </dependency>
   </dependencies>
   <build>
     <plugins>

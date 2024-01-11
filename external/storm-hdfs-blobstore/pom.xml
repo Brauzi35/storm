@@ -29,7 +29,7 @@
     
     <properties>
         <!-- Required downgrade by hadoop-hdfs 2.8.5 -->
-        <guava.version>16.0.1</guava.version>
+        <guava.version>31.1-jre</guava.version>
     </properties>
 
     <developers>
@@ -215,7 +215,13 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
+            <version>5.9.2</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
         </dependency>
     </dependencies>
     <build>

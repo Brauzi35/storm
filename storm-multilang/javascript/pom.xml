@@ -28,6 +28,13 @@
     <artifactId>multilang-javascript</artifactId>
     <packaging>jar</packaging>
     <name>multilang-javascript</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

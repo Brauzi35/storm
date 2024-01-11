@@ -46,6 +46,11 @@
             <artifactId>multilang-python</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.storm</groupId>
+            <artifactId>storm-core</artifactId>
+            <version>2.4.0</version>
+        </dependency>
     </dependencies>
 
     <build>
