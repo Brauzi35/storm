@@ -289,19 +289,20 @@
         </plugins>
     </build>
     <profiles>
+        <!-- Ba-Dua Profile -->
         <profile>
             <id>badua</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-                <!-- Use a stable version istead of SNAPSHOT one -->
+                <!-- Use a stable version instead of SNAPSHOT one -->
                 <ba-dua.version>0.6.0</ba-dua.version>
                 <argLine>-javaagent:target/dependency/ba-dua-agent-rt-${ba-dua.version}-all.jar
                     -Doutput.file=target/badua.ser
                 </argLine>
             </properties>
-            <!-- Needed for generate the report -->
+            <!-- Needed to generate the report -->
             <dependencies>
                 <dependency>
                     <groupId>br.usp.each.saeg</groupId>
@@ -311,7 +312,7 @@
             </dependencies>
             <build>
                 <plugins>
-                    <!-- Copy ba-dua-agent-rt and ba-dua-cli from .m2 directory to target/dependency -->
+                    <!-- Copy ba-dua-agent-rt from .m2 directory to target/dependency -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-dependency-plugin</artifactId>
@@ -340,31 +341,70 @@
                             </execution>
                         </executions>
                     </plugin>
-                    <!-- The report generation in xml format is not available due to issues with exec-maven-plugin -->
+
+                    <!-- build .xml report's file -->
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>1.5.0</version>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <phase>verify</phase>
+                                <configuration>
+                                    <executable>java</executable>
+                                    <arguments>
+                                        <argument>-jar</argument>
+                                        <argument>
+                                            ${project.basedir}/../badua/ba-dua-cli-0.6.0-all.jar
+                                        </argument>
+                                        <argument>report</argument>
+                                        <argument>-input</argument>
+                                        <argument>target/badua.ser</argument>
+                                        <argument>-classes</argument>
+                                        <argument>target/classes</argument>
+                                        <argument>-show-classes</argument>
+                                        <argument>-show-methods</argument>
+                                        <argument>-xml</argument>
+                                        <argument>target/badua.xml</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
                 </plugins>
             </build>
         </profile>
+        <!-- PIT Profile-->
         <profile>
             <id>pit</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>org.pitest</groupId>
                         <artifactId>pitest-maven</artifactId>
-                        <version>1.14.1</version>
+                        <version>1.5.1</version>
                         <configuration>
+                            <maxMutationsPerClass>5</maxMutationsPerClass>
+                            <verbose>true</verbose>
                             <targetClasses>
-                                <param>org.apache.storm.topology.StatefulBoltExecutor</param>
-                                <param>org.apache.storm.topology.BaseStatefulBoltExecutor</param>
-                                <param>org.apache.storm.spout.CheckpointSpout</param>
+                                <!--param>org.apache.bookkeeper.client.BookKeeper</param-->
+                                <param>org.apache.storm.bolt.JoinBolt</param>
                             </targetClasses>
                             <targetTests>
-                                <param>org.apache.storm.topology.TestStatefulBoltExecutor</param>
-                                <param>org.apache.storm.spout.TestCheckpointSpout</param>
+
+                                <param>org.apache.storm.bolt.JoinBoltTest</param>
+
                             </targetTests>
                         </configuration>
                         <executions>
                             <execution>
+                                <id>Mutation Report</id>
                                 <phase>verify</phase>
                                 <goals>
                                     <goal>mutationCoverage</goal>
