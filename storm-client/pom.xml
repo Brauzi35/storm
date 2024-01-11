@@ -388,17 +388,16 @@
                     <plugin>
                         <groupId>org.pitest</groupId>
                         <artifactId>pitest-maven</artifactId>
-                        <version>1.5.1</version>
+                        <version>1.14.1</version>
                         <configuration>
-                            <maxMutationsPerClass>5</maxMutationsPerClass>
+                            <!--maxMutationsPerClass>5</maxMutationsPerClass-->
                             <verbose>true</verbose>
                             <targetClasses>
-                                <!--param>org.apache.bookkeeper.client.BookKeeper</param-->
                                 <param>org.apache.storm.bolt.JoinBolt</param>
                             </targetClasses>
                             <targetTests>
 
-                                <param>org.apache.storm.bolt.JoinBoltTest</param>
+                                <param>org.apache.storm.bolt.JoinBoltTest2</param>
 
                             </targetTests>
                         </configuration>
