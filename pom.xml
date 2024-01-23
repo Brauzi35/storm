@@ -323,7 +323,7 @@
         <servlet.version>3.1.0</servlet.version>
         <joda-time.version>2.3</joda-time.version>
         <thrift.version>0.13.0</thrift.version>
-        <junit.jupiter.version>5.5.1</junit.jupiter.version>
+        <junit.jupiter.version>5.5.1</junit.jupiter.version> <!-- was 5.5.1 -->
         <surefire.version>3.0.0-M5</surefire.version>
         <awaitility.version>3.1.0</awaitility.version>
         <hdrhistogram.version>2.1.10</hdrhistogram.version>
@@ -377,7 +377,7 @@
         <module>storm-buildtools/storm-maven-plugins</module>
         <module>storm-client</module>
         <module>storm-server</module>
-        <module>storm-core</module>
+        <!--module>storm-core</module-->
         <module>storm-webapp</module>
         <module>storm-clojure</module>
         <module>storm-clojure-test</module>
@@ -402,6 +402,7 @@
             <groupId>org.apache.storm</groupId>
             <artifactId>storm-core</artifactId>
             <version>2.4.0</version>
+            <scope>provided</scope> <!-- fixing multiple yaml-->
         </dependency>
         <dependency>
             <groupId>org.junit.vintage</groupId>
