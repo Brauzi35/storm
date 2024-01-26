@@ -108,6 +108,7 @@ public class DependencyUploader {
     public List<String> uploadArtifacts(Map<String, File> artifacts) {
         checkFilesExist(artifacts.values());
 
+
         List<String> keys = new ArrayList<>(artifacts.size());
         try {
             for (Map.Entry<String, File> artifactToFile : artifacts.entrySet()) {
