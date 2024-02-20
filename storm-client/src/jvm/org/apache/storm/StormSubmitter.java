@@ -234,19 +234,21 @@ public class StormSubmitter {
             throw new WrappedInvalidTopologyException("Topology " + name + " does not have any spout");
         }
 
+
         topoConf = new HashMap<>(topoConf);
         topoConf.putAll(Utils.readCommandLineOpts());
         Map<String, Object> conf = Utils.readStormConfig();
         conf.putAll(topoConf);
         topoConf.putAll(prepareZookeeperAuthentication(conf));
-
         validateConfs(conf);
+
 
         try {
             Utils.validateCycleFree(topology, name);
         } catch (InvalidTopologyException ex) {
             LOG.warn("", ex);
         }
+
 
         Map<String, String> passedCreds = new HashMap<>();
         if (opts != null) {
