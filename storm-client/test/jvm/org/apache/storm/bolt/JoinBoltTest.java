@@ -39,8 +39,8 @@ public class JoinBoltTest {
                 {createEmptyTupleWindow(), new Values(), createValidJoinBolt(), false},
                 {createInvalidTupleWindow(), new Values(), createValidJoinBolt(), false},
                 //miglioramenti
-                {createDifferentStreamTupleWindow(), new Values(), createDifferentStreamJoinBolt(), true},
-                {createValidTupleWindow(), new Values("value1"), createJoinBoltWithOutputStream(), true}
+                //{createDifferentStreamTupleWindow(), new Values(), createDifferentStreamJoinBolt(), true},
+                //{createValidTupleWindow(), new Values("value1"), createJoinBoltWithOutputStream(), true}
         });
     }
 

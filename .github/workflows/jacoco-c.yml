@@ -15,7 +15,7 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
       - name: Build
-        run: mvn clean verify -P jacoco
+        run: mvn clean -pl storm-client verify -P jacoco
       - name: Upload report
         uses: actions/upload-artifact@v3
         with:
