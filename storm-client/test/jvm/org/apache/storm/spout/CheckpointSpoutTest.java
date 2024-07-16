@@ -95,33 +95,7 @@ public class CheckpointSpoutTest {
 
         if(!this.expExc) {
             System.out.println("entrato if");
-            /*
-            ArgumentCaptor<String> stream = ArgumentCaptor.forClass(String.class);
-            ArgumentCaptor<Values> values = ArgumentCaptor.forClass(Values.class);
-            ArgumentCaptor<Object> msgId = ArgumentCaptor.forClass(Object.class);
 
-            spout.nextTuple();
-            spout.ack(-1L);
-            spout.nextTuple();
-
-
-
-            Mockito.verify(this.oc, Mockito.times(2)).emit(stream.capture(),
-                    values.capture(),
-                    msgId.capture());
-
-
-
-            Values expectedTuple = new Values(0L, CheckPointState.Action.PREPARE);
-
-            //assertEquals(CheckpointSpout.CHECKPOINT_STREAM_ID, stream.getValue());
-            assertEquals(expectedTuple, values.getValue()); //make sure that we are in the prepare phase
-            //assertEquals(0L, msgId.getValue());
-
-
-
-
-             */
 
             AtomicBoolean check = new AtomicBoolean(false);
             doAnswer(invocationOnMock -> {

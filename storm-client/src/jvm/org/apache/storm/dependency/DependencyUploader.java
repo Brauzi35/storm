@@ -96,6 +96,7 @@ public class DependencyUploader {
                 keys.add(key);
             }
         } catch (Throwable e) {
+            System.out.println("entrato catch\n");
             if (getBlobStore() != null && cleanupIfFails) {
                 deleteBlobs(keys);
             }
