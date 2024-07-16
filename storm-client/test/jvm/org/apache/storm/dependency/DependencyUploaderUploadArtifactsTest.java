@@ -112,8 +112,13 @@ public class DependencyUploaderUploadArtifactsTest {
         List<String> ret = null;
 
         try {
-            ret = this.du.uploadArtifacts(this.artifacts);
-
+            ret = du.uploadArtifacts(artifacts);
+            if(!artifacts.isEmpty()){
+                Assert.assertTrue(ret.get(0).contains("valid"));
+            }else{
+                //se invece le dependencies erano lista vuota, anche ret deve essere vuota
+                Assert.assertTrue(ret.isEmpty());
+            }
         }catch (FileNotAvailableException e){
             if(this.expRes){
                 actual = false;
